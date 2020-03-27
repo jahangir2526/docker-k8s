@@ -15,4 +15,4 @@ A simple Hello World Java SE app (print a Hello World message). This is used to 
     docker build -t hello-world-javase .
 
 ## 3. Run the app in a container
-    docker run hello-world-java
+    docker run hello-world-javase
