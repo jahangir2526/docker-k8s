@@ -1,3 +1,18 @@
-Ref Link: https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/
+# Simple Java SE App
+A simple Hello World Java SE app (print a Hello World message). This is used to demonstrate how to build a docker image and run java app as container.
 
-## Docker HelloWolrd for JavaSE
+  Below are the steps to follow:
+  
+  - Make sure docker is installed
+  - Build the image
+  - Run the app in a container
+    
+## 1. Make sure docker is installed
+    docker --version
+    docker ps
+  
+## 2. Build the image
+    docker build -t hello-world-javase .
+
+## 3. Run the app in a container
+    docker run hello-world-java
