@@ -1,15 +1,18 @@
-## UML diagrams
+# Simple NodeJS Web App
+A simple NodeJS Web App (print a Hello World message). This is used to demonstrate how to build a docker image and run NodeJS app as container.
 
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+  Below are the steps to follow:
+  
+  - Make sure docker is installed
+  - Build the image
+  - Run the app in a container
+    
+## 1. Make sure docker is installed
+    docker --version
+    docker ps
+  
+## 2. Build the image
+    docker build -t hello-world-web-nodejs .
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+## 3. Run the app in a container
+    docker run hello-world-web-nodejs
