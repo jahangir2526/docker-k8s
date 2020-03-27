@@ -6,6 +6,7 @@ A simple NodeJS Web App (print a Hello World message). This is used to demonstra
   - Make sure docker is installed
   - Build the image
   - Run the app in a container
+  - Access the app
     
 ## 1. Make sure docker is installed
     docker --version
@@ -15,4 +16,8 @@ A simple NodeJS Web App (print a Hello World message). This is used to demonstra
     docker build -t hello-world-web-nodejs .
 
 ## 3. Run the app in a container
-    docker run hello-world-web-nodejs
+    docker run -p 80:8080 hello-world-web-nodejs  # exposed port 8080 and mapped with 80 at host
+
+## 4. Access the app
+    curl http://localhost     ## at docker host
+   
