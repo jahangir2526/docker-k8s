@@ -9,7 +9,7 @@ const express = require('express');
  // App
  const app = express();
  app.get('/', (req, res) => {
-   res.send('Hello World !!! From: NodeJS');
+   res.send('Hello World !!! From: NodeJS <br/>');
    });
 
    app.listen(PORT, HOST);
