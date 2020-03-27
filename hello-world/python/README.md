@@ -8,7 +8,8 @@ A simple Hello World python app (print a Hello World message). This is used to d
   - Run the app in a container
     
 ## 1. Make sure docker is installed
-    docker version
+    docker --version
+    docker ps
   
 ## 2. Build the image
     docker build -t hello-world-python:v1 .
